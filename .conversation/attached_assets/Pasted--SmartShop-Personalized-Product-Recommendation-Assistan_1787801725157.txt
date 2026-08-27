@@ -1,0 +1,173 @@
+# SmartShop – Personalized Product Recommendation Assistant
+
+Build a complete but simple web application called **SmartShop** for an AI Growth & Agentic Commerce project.
+
+The project should look like a realistic student project, not an overly complex enterprise application. Keep the code clean, simple, well-organized, and easy for a beginner to understand and explain.
+
+## Project idea
+
+SmartShop helps users find suitable products based on their **budget, category, and needs**.
+
+For example, a user can enter:
+
+> I need a laptop under ₹50,000 for coding.
+
+The application should analyze the user's requirements and recommend suitable products from a predefined product dataset.
+
+## Important requirement
+
+Do not create an unnecessarily complex architecture.
+
+* Use simple React with JavaScript or TypeScript.
+* Keep the number of files reasonable.
+* Add clear comments to important parts of the code.
+* Use simple functions with meaningful names.
+* Do not use complicated algorithms unless necessary.
+* Use a local product dataset instead of requiring a real database.
+* Do not require paid APIs or API keys.
+* Make sure the project runs successfully in Replit before finishing.
+
+## Features
+
+### 1. Home page
+
+Create a clean homepage with:
+
+* Project name: SmartShop
+* Short description of what the application does
+* Search/input box where users describe what they need
+* Budget selection
+* Product category selection
+* Search button
+
+### 2. Product dataset
+
+Create a simple local dataset containing approximately 20–30 products.
+
+Use categories such as:
+
+* Laptops
+* Smartphones
+* Headphones
+* Fashion
+* Beauty products
+
+Each product should contain:
+
+* id
+* name
+* category
+* price
+* rating
+* short description
+* features
+
+Store this data in a separate simple file.
+
+### 3. Recommendation logic
+
+When the user enters their requirement, the application should:
+
+1. Read the user's search text.
+2. Identify useful keywords.
+3. Check the selected category.
+4. Check the user's budget.
+5. Filter matching products from the dataset.
+6. Sort or rank suitable products based on how well they match.
+7. Display the top recommended products.
+
+Use simple keyword matching and filtering logic so that the code is easy to understand.
+
+For every recommendation, display a short explanation such as:
+
+> Recommended because this laptop is within your ₹50,000 budget and is suitable for coding.
+
+### 4. Simple AI-style assistant
+
+Create a section called **Smart Assistant**.
+
+The user can type a request such as:
+
+* I need a laptop for coding under ₹50,000.
+* Suggest headphones under ₹3,000.
+* I want a smartphone with a good camera.
+
+The assistant should process the request using the application's own simple recommendation logic and respond with useful recommendations.
+
+Do not use a real AI API. Clearly structure the recommendation function so that a real AI API could be added later, but the current application must work completely without an API key.
+
+### 5. Product cards
+
+Display recommended products as cards containing:
+
+* Product name
+* Category
+* Price
+* Rating
+* Features
+* Why it was recommended
+
+### 6. Product comparison
+
+Allow the user to select up to two products and compare:
+
+* Price
+* Rating
+* Features
+
+Keep this feature simple and easy to understand.
+
+### 7. Simple dashboard
+
+Add a small dashboard or section showing:
+
+* Recent searches
+* Popular category
+* Number of recommendations generated
+
+Use local state or local storage.
+
+## Design
+
+Use a modern but simple design.
+
+* Responsive layout
+* Clean navigation
+* Professional colors
+* Easy-to-read text
+* Do not add unnecessary animations or complex visual effects
+
+## Code structure
+
+Keep the project structure simple, for example:
+
+* App
+* components
+* data/products
+* utility or recommendation function
+
+Do not create too many folders or files.
+
+## Final requirements
+
+Before finishing:
+
+1. Install all required dependencies.
+2. Run the application.
+3. Fix all compilation and runtime errors.
+4. Check that the preview displays correctly and is not blank.
+5. Test at least these searches:
+
+   * laptop under 50000 for coding
+   * headphones under 3000
+   * smartphone with good camera
+6. Ensure recommendations are displayed.
+7. Add a README explaining:
+
+   * Project objective
+   * Features
+   * Technology used
+   * How the recommendation logic works
+   * How to run the project
+
+At the end, explain the project structure and the main files in simple beginner-friendly language so I can understand and present the project myself.

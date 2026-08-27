@@ -1,6 +1,6 @@
-# [Project name]
+# SmartShop
 
-_Replace the heading above with the project's name, and this line with one sentence describing what this app does for users._
+SmartShop helps shoppers find practical products within their budget using a transparent local recommendation catalog.
 
 ## Run & Operate
 
@@ -22,23 +22,30 @@ _Replace the heading above with the project's name, and this line with one sente
 
 ## Where things live
 
-_Populate as you build — short repo map plus pointers to the source-of-truth file for DB schema, API contracts, theme files, etc._
+- `artifacts/smartshop/src/App.tsx` — main responsive experience and local state
+- `artifacts/smartshop/src/data/products.ts` — source of truth for the product catalog
+- `artifacts/smartshop/src/lib/recommendations.ts` — explainable keyword, category, budget, and ranking logic
+- `artifacts/smartshop/src/components/smart-product.tsx` — product cards and comparison visuals
+- `artifacts/smartshop/src/index.css` — SmartShop theme and interaction styles
+- `artifacts/smartshop/README.md` — beginner-friendly project guide
 
 ## Architecture decisions
 
-_Populate as you build — non-obvious choices a reader couldn't infer from the code (3-5 bullets)._
+- The first version is frontend-only so it works without paid APIs, API keys, or database setup.
+- Product recommendations use keyword matching and tags so the results are easy to explain in a student presentation.
+- localStorage keeps saved picks, recent searches, and insight counts on the current device.
 
 ## Product
 
-_Describe the high-level user-facing capabilities of this app once they exist._
+Users can describe a shopping need, narrow it with category and budget controls, review explained recommendations, save products, and compare two options side by side.
 
 ## User preferences
 
-_Populate as you build — explicit user instructions worth remembering across sessions._
+The project should stay simple, clean, and beginner-friendly.
 
 ## Gotchas
 
-_Populate as you build — sharp edges, "always run X before Y" rules._
+The frontend workflow supplies `PORT` and `BASE_PATH`; use the managed workflow rather than starting Vite without those values.
 
 ## Pointers
 

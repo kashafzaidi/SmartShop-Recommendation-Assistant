@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "SmartShop"
+description = "A beginner-friendly personalized shopping assistant that recommends products from a local catalog based on a shopper's needs, category, and budget, with comparison and lightweight insights."
+version = "1.0.0"
+id = "artifacts/smartshop"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 22404
+
+[services.development]
+run = "pnpm --filter @workspace/smartshop run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/smartshop", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/smartshop/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "22404"
+BASE_PATH = "/"
